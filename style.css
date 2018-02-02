@@ -1,26 +1,41 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: default;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-  background-color: #759bc1;
+  background: linear-gradient(#ebf4f8, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #mainContainer {
-  height: 350px; 
-  border-top: 5px double darkGray;
-  border-bottom: 5px double darkGray;
+  height: 350px;
+
+  margin-top: 1px;
+
+  border-top: 5px double #b8b9bc;
+  border-bottom: 5px double #b8b9bc;
+
+  border-top: 5px double #acd7fb;
+  border-bottom: 5px double #acd7fb;
 }
 
 h1 {
   text-align: center;
   margin-top: 110px;
   font-family: sans-serif;
+
   color: darkSlateGray;
+  color: #1746b1;
 }
 
-.searchBar {
+#searchBar {
   display: block;
   width: 40%;
   height: 25px;
@@ -28,18 +43,18 @@ h1 {
   margin-top: 10px;
   margin-bottom: 15px;
   padding-left: 4px;
+  cursor: text;
 }
 
-.randomWiki {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: block;
-  width: 10%;
+#randomWiki {
+  width: 135px;
   height: 20px;
   margin: auto;
+  padding-top: 6px;
   font-size: 12px;
+  font-family: sans-serif;
+  text-align: center;
+  background: #f6f6f6;
   border: 1px solid lightGray;
-  border-radius: 0;
-  background: #e7e7e7;
   cursor: pointer;
 }
