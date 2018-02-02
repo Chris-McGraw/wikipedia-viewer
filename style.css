@@ -30,33 +30,20 @@ h1 {
 
 #searchBar {
   display: block;
-  width: 40%;
+  width: 525px;
   height: 25px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   padding-left: 4px;
   cursor: text;
 }
 
 #button-container {
-  width: 575px;
+  width: 375px;
   height: auto;
-  border: 1px solid black;
   margin: auto;
-}
-
-#wiki-random-button {
-  width: 135px;
-  height: 20px;
-  margin: auto;
-  padding-top: 6px;
   text-align: center;
-  font-size: 12px;
-  font-family: sans-serif;
-  background: #f6f6f6;
-  border: 1px solid lightGray;
-  cursor: pointer;
 }
 
 #wiki-search-button {
@@ -64,10 +51,26 @@ h1 {
   height: 20px;
   margin: auto;
   padding-top: 6px;
-  text-align: center;
   font-size: 12px;
+  font-weight: bold;
   font-family: sans-serif;
   background: #f6f6f6;
   border: 1px solid lightGray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#wiki-random-button {
+  width: 135px;
+  height: 20px;
+  margin: auto;
+  margin-top: 15px;
+  padding-top: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: #f6f6f6;
+  border: 1px solid lightGray;
+  border-radius: 5px;
   cursor: pointer;
 }
