@@ -16,22 +16,15 @@ body {
 
 #mainContainer {
   height: 350px;
-
   margin-top: 1px;
-
-  border-top: 5px double #b8b9bc;
-  border-bottom: 5px double #b8b9bc;
-
   border-top: 5px double #acd7fb;
   border-bottom: 5px double #acd7fb;
 }
 
 h1 {
-  text-align: center;
   margin-top: 110px;
+  text-align: center;
   font-family: sans-serif;
-
-  color: darkSlateGray;
   color: #1746b1;
 }
 
@@ -46,14 +39,34 @@ h1 {
   cursor: text;
 }
 
-#randomWiki {
+#button-container {
+  width: 575px;
+  height: auto;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#wiki-random-button {
   width: 135px;
   height: 20px;
   margin: auto;
   padding-top: 6px;
+  text-align: center;
   font-size: 12px;
   font-family: sans-serif;
+  background: #f6f6f6;
+  border: 1px solid lightGray;
+  cursor: pointer;
+}
+
+#wiki-search-button {
+  width: 135px;
+  height: 20px;
+  margin: auto;
+  padding-top: 6px;
   text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
   background: #f6f6f6;
   border: 1px solid lightGray;
   cursor: pointer;
