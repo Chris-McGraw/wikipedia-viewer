@@ -67,6 +67,8 @@ h1 {
 }
 
 #wiki-random-button {
+  display: inline-block;
+
   width: 135px;
   height: 20px;
   margin: auto;
@@ -83,6 +85,10 @@ h1 {
 
 #wiki-random-button:active {
   box-shadow: inset 0px 0px 5px #a3a9b2;
+}
+
+.button-link {
+  color: black;
 }
 
 #results-container {
