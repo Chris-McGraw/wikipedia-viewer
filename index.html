@@ -4,15 +4,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Wikipedia Viewer</title>
 </head>
 
 <body>
-  <div id="mainContainer">
+  <div id="search-container">
     <h1>Search Wikipedia</h1>
-    <input class="searchBar" type="text" placeholder="..." />
-    <button class="randomWiki" type="button" value="">Random</button>
+    <input id="searchBar" type="text" placeholder="Search for Wikipedia Articles" />
+    <div id="button-container">
+      <div id="wiki-search-button">Search for Article</div>
+      <div id="wiki-random-button">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a>
+      </div>
+    </div>
   </div>
+
+  <div id="results-container">
+  </div>
+
+  <div class="footer">
+    <p class="footer-text-top">Coded & Written by</p>
+    <p class="footer-text-bottom">Chris McGraw</p>
+    <div class="social-media-container">
+      <a href="https://codepen.io/cmcgraw/" target="_blank">
+        <i class="fa fa-codepen fa-2x">
+        </i>
+      </a>
+      <a href="https://www.freecodecamp.org/chris-mcgraw/" target="_blank">
+        <i class="fa fa-free-code-camp fa-2x">
+        </i>
+      </a>
+      <a href="https://github.com/Chris-McGraw/" target="_blank">
+        <i class="fa fa-github-square fa-2x">
+        </i>
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>

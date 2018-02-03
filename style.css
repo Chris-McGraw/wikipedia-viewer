@@ -1,45 +1,139 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: default;
+  user-select: none;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-  background-color: #759bc1;
+  background: linear-gradient(#ebf4f8, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#mainContainer {
-  height: 350px; 
-  border-top: 5px double darkGray;
-  border-bottom: 5px double darkGray;
+#search-container {
+  height: 350px;
+  margin-top: 1px;
+  border-top: 5px double #acd7fb;
+  border-bottom: 5px double #acd7fb;
 }
 
 h1 {
-  text-align: center;
   margin-top: 110px;
+  text-align: center;
   font-family: sans-serif;
-  color: darkSlateGray;
+  color: #1746b1;
 }
 
-.searchBar {
+#searchBar {
   display: block;
-  width: 40%;
+  width: 525px;
   height: 25px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   padding-left: 4px;
+  cursor: text;
 }
 
-.randomWiki {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: block;
-  width: 10%;
+#button-container {
+  width: 375px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+#wiki-search-button {
+  width: 135px;
   height: 20px;
   margin: auto;
+  padding-top: 6px;
   font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: #f6f6f6;
   border: 1px solid lightGray;
-  border-radius: 0;
-  background: #e7e7e7;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+#wiki-search-button:active {
+  box-shadow: inset 0px 0px 5px #a3a9b2;
+}
+
+#wiki-random-button {
+  width: 135px;
+  height: 20px;
+  margin: auto;
+  margin-top: 15px;
+  padding-top: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: #f6f6f6;
+  border: 1px solid lightGray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#wiki-random-button:active {
+  box-shadow: inset 0px 0px 5px #a3a9b2;
+}
+
+#results-container {
+  height: auto;
+  min-height: 180px;
+  border-bottom: 5px double #acd7fb;
+}
+
+
+.footer {
+  width: 85%;
+  height: 115px;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.footer i {
+  color: #1746b1;
+  link-style: none;
+  cursor: pointer;
+}
+
+.footer i:hover {
+  opacity: 0.75;
+}
+
+.footer-text-top {
+  margin: auto;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: #1746b1;
+}
+
+.footer-text-bottom {
+  margin: auto;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: #1746b1;
+}
+
+.social-media-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
 }
