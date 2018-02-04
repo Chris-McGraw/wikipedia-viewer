@@ -47,6 +47,13 @@ h1 {
   cursor: text;
 }
 
+#search-icon {
+  position: relative;
+  top: -125px;
+  left: 875px;
+  cursor: pointer;
+}
+
 #button-container {
   width: 375px;
   height: auto;
@@ -132,6 +139,14 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* .result-frame-2:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+.result-frame-2:active {
+  box-shadow: inset 0px 0px 5px black;
+} */
 
 .result-title {
   width: 99%;
