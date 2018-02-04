@@ -106,12 +106,8 @@ h1 {
 
 #results-container {
   height: auto;
-
-  /* min-height: 180px; */
-
   border-bottom: 5px double #acd7fb;
-
-  /* display: none; */
+  display: none;
 }
 
 .result-frame {
@@ -119,14 +115,9 @@ h1 {
   width: 95%;
   margin: auto;
   margin-top: 10px;
-
-  background-color: #f8f9fa;
-  /* background-color: #f6f6f6; */
   background-color: white;
-
   border: 1px solid black;
   border-radius: 5px;
-
   cursor: pointer;
 }
 
@@ -136,14 +127,9 @@ h1 {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-
-  background-color: #f8f9fa;
-  /* background-color: #f6f6f6; */
   background-color: white;
-
   border: 1px solid black;
   border-radius: 5px;
-
   cursor: pointer;
 }
 
