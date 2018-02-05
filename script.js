@@ -5,4 +5,19 @@ $(document).ready(function(){
   $("#search-icon").on("click", function(){
     $("#results-container").slideToggle(750);
   });
+
+  $(".result-frame").on("mouseenter", function(){
+    $(this).addClass("hover-frame");
+  });
+  $(".result-frame").on("mouseleave", function(){
+    $(this).removeClass("hover-frame");
+  });
+
+  $(".result-frame-2").on("mouseenter", function(){
+    $(this).addClass("hover-frame");
+  });
+  $(".result-frame-2").on("mouseleave", function(){
+    $(this).removeClass("hover-frame");
+  });
+
 });
