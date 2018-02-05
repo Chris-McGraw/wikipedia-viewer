@@ -125,11 +125,6 @@ h1 {
   display: none;
 }
 
-.hover-frame {
-  width: 94.5%;
-  border-left: 8px solid #1746b1;
-}
-
 .result-frame {
   height: 70px;
   width: 95%;
@@ -159,6 +154,11 @@ h1 {
 
 .result-frame-2:active {
   box-shadow: inset -1px 0px 8px #72777d;
+}
+
+.hover-frame {
+  width: 94.5%;
+  border-left: 8px solid #1746b1;
 }
 
 .result-title {
