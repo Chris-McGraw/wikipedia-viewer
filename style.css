@@ -35,16 +35,30 @@ h1 {
   color: #1746b1;
 }
 
+#search-bar-container {
+  height: auto;
+  width: 600px;
+  margin: auto;
+}
+
 #searchBar {
   display: block;
-  width: 525px;
+  width: 496px;
   height: 35px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 25px;
   padding-left: 4px;
+  padding-right: 29px;
   font-size: 16px;
   cursor: text;
+}
+
+#search-icon {
+  position: relative;
+  top: -54px;
+  left: 539px;
+  cursor: pointer;
 }
 
 #button-container {
@@ -58,6 +72,7 @@ h1 {
   width: 135px;
   height: 20px;
   margin: auto;
+  margin-top: -18px;
   padding-top: 6px;
   font-size: 12px;
   font-weight: bold;
@@ -121,6 +136,10 @@ h1 {
   cursor: pointer;
 }
 
+.result-frame:active {
+  box-shadow: inset -1px 0px 8px #72777d;
+}
+
 .result-frame-2 {
   height: 70px;
   width: 95%;
@@ -131,6 +150,15 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.result-frame-2:active {
+  box-shadow: inset -1px 0px 8px #72777d;
+}
+
+.hover-frame {
+  width: 94.5%;
+  border-left: 8px solid #1746b1;
 }
 
 .result-title {
@@ -151,6 +179,9 @@ h1 {
   font-family: sans-serif;
   cursor: pointer;
 }
+
+
+/* ----- FOOTER BEGINS BELOW ----- */
 
 .footer {
   width: 85%;
