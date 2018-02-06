@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+  /* $.getJSON("https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&exsentences=1&explaintext&list=&generator=search&redirects=1&formatversion=2&origin=*&gsrsearch=giant%20bomb&gsrlimit=10", function(json) {
+    json.query.pages.forEach(function(element){
+      console.log(element.title);
+      console.log(element.extract);
+      console.log("");
+    });
+  }); */
+
   $("#wiki-search-button").on("click", function(){
     $("#results-container").slideToggle(750);
   });
