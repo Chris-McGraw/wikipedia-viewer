@@ -138,6 +138,11 @@ h1 {
   cursor: pointer;
 }
 
+.result-frame:hover {
+  width: 95.5%;
+  border-left: 8px solid #1746b1;
+}
+
 .result-frame:active {
   box-shadow: inset -1px 0px 8px #72777d;
 }
@@ -154,13 +159,13 @@ h1 {
   cursor: pointer;
 }
 
-.result-frame-2:active {
-  box-shadow: inset -1px 0px 8px #72777d;
-}
-
-.hover-frame {
+.result-frame-2:hover {
   width: 95.5%;
   border-left: 8px solid #1746b1;
+}
+
+.result-frame-2:active {
+  box-shadow: inset -1px 0px 8px #72777d;
 }
 
 .result-title {
