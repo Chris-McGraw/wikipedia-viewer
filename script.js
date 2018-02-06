@@ -1,18 +1,11 @@
 $(document).ready(function(){
 
-  /* $.getJSON("https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&origin=*&srsearch=giant%20bomb", function(json) {
-    console.log(json.query.search[0].title);
-    console.log(json.query.search[0].snippet);
-
-    console.log(json.query.search[1].title);
-    console.log(json.query.search[2].title);
-    console.log(json.query.search[3].title);
-    console.log(json.query.search[4].title);
-    console.log(json.query.search[5].title);
-    console.log(json.query.search[6].title);
-    console.log(json.query.search[7].title);
-    console.log(json.query.search[8].title);
-    console.log(json.query.search[9].title);
+  /* $.getJSON("https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&exsentences=1&explaintext&list=&generator=search&redirects=1&formatversion=2&origin=*&gsrsearch=giant%20bomb&gsrlimit=10", function(json) {
+    json.query.pages.forEach(function(element){
+      console.log(element.title);
+      console.log(element.extract);
+      console.log("");
+    });
   }); */
 
   $("#wiki-search-button").on("click", function(){
