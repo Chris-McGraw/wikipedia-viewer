@@ -16,11 +16,12 @@ $(document).ready(function(){
             $("#results-container").append("<div class='result-frame'>" + "<div class='result-title'>" + json.query.pages[i].title + "</div>" + "<div class='result-desc'>" + json.query.pages[i].extract + "</div>" + "</div>");
           }
 
-          /* json.query.pages.forEach(function(element){
+          json.query.pages.forEach(function(element){
             console.log(element.title);
+            console.log(element.pageid);
             console.log(element.extract);
             console.log("");
-          }); */
+          });
         }
 
         else {
