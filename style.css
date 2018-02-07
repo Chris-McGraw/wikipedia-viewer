@@ -128,10 +128,12 @@ h1 {
 }
 
 .result-frame {
-  height: 70px;
+  height: auto;
   width: 95%;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
@@ -139,37 +141,10 @@ h1 {
 }
 
 .result-frame:hover {
-  width: 95.5%;
   border-left: 8px solid #1746b1;
 }
 
 .result-frame:active {
-  box-shadow: inset -1px 0px 8px #72777d;
-}
-
-.result-frame-2 {
-  height: 70px;
-  height: auto;
-
-  width: 95%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  padding-bottom: 6px;
-
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.result-frame-2:hover {
-  width: 95.5%;
-  border-left: 8px solid #1746b1;
-}
-
-.result-frame-2:active {
   box-shadow: inset -1px 0px 8px #72777d;
 }
 
