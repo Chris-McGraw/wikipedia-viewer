@@ -183,6 +183,17 @@ h1 {
   cursor: pointer;
 }
 
+.result-none-title {
+  width: 99%;
+  margin: auto;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
 .result-desc {
   width: 99%;
   margin: auto;
