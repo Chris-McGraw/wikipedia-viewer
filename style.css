@@ -158,6 +158,28 @@ h1 {
   cursor: pointer;
 }
 
+.result-desc {
+  width: 99%;
+  margin: auto;
+  margin-top: 6px;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.result-none-frame {
+  height: auto;
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: default;
+}
+
 .result-none-title {
   width: 99%;
   margin: auto;
@@ -166,16 +188,7 @@ h1 {
   font-weight: bold;
   font-family: sans-serif;
   text-align: center;
-  cursor: pointer;
-}
-
-.result-desc {
-  width: 99%;
-  margin: auto;
-  margin-top: 6px;
-  font-size: 16px;
-  font-family: sans-serif;
-  cursor: pointer;
+  cursor: default;
 }
 
 

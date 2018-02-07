@@ -24,7 +24,7 @@ $(document).ready(function(){
         }
 
         else {
-          $("#results-container").append("<div class='result-frame'>" + "<div class='result-none-title'>" + "No Results" + "</div>" + "</div>");
+          $("#results-container").append("<div class='result-none-frame'>" + "<div class='result-none-title'>" + "No Results" + "</div>" + "</div>");
         }
       });
 
