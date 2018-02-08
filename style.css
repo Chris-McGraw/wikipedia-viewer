@@ -122,18 +122,21 @@ h1 {
 }
 
 #results-container {
-  height: auto;
-  border-bottom: 5px double #acd7fb;
   display: none;
+  height: auto;
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 5px double #acd7fb;
 }
 
 .result-frame {
+  display: inline-block;
   height: auto;
   width: 95%;
   margin: auto;
-  margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 6px;
+  text-align: left;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
@@ -167,11 +170,14 @@ h1 {
   cursor: pointer;
 }
 
+.result-frame-link {
+  color: black;
+}
+
 .result-none-frame {
   height: auto;
   width: 95%;
   margin: auto;
-  margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 6px;
   background-color: white;
