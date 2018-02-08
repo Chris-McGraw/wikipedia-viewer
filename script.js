@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
+/* ---------- Variable Declarations ---------- */
+
   searchTerm = "";
   currentTerm = "";
   expandContainer = false;
 
-  $("#wiki-search-button").on("click", function(){
-    searchTerm = document.getElementById("search-bar").value;
+/* ---------- Function Declarations ---------- */
 
+  function getResults(){
     if(searchTerm !== "" && searchTerm !== currentTerm) {
       $("#results-container").empty();
 
@@ -36,6 +38,22 @@ $(document).ready(function(){
         expandContainer = true;
       }
     }
+  }
+
+/* ---------- Event Handlers ---------- */
+
+  $(document).keypress(function(key) {
+    if(key.which == 13) {
+      searchTerm = document.getElementById("search-bar").value;
+
+      getResults();
+    }
+  });
+
+  $("#wiki-search-button").on("click", function(){
+    searchTerm = document.getElementById("search-bar").value;
+
+    getResults();
   });
 
   $("#search-icon").on("click", function(){
