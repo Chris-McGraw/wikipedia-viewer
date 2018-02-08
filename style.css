@@ -83,14 +83,11 @@ h1 {
   border: 1px solid lightGray;
   border-radius: 5px;
   cursor: pointer;
-}
-
-#wiki-search-button:hover {
-  box-shadow: 0px 0px 5px #72777d;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 #wiki-search-button:active {
-  box-shadow: inset 0px 0px 5px #a3a9b2;
+  box-shadow: inset 0px 0px 5px #a3a9b2 !important;
 }
 
 #wiki-random-button {
@@ -109,16 +106,13 @@ h1 {
   cursor: pointer;
 }
 
-#wiki-random-button:hover {
-  box-shadow: 0px 0px 5px #72777d;
-}
-
 #wiki-random-button:active {
-  box-shadow: inset 0px 0px 5px #a3a9b2;
+  box-shadow: inset 0px 0px 5px #a3a9b2 !important;
 }
 
 .button-link {
   color: black;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 #results-container {
@@ -143,11 +137,8 @@ h1 {
   cursor: pointer;
 }
 
-.result-frame:hover {
-  border-left: 8px solid #1746b1;
-}
-
 .result-frame:active {
+  border-left: 8px solid #1746b1;
   box-shadow: inset -1px 0px 8px #72777d;
 }
 
@@ -172,6 +163,7 @@ h1 {
 
 .result-frame-link {
   color: black;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .result-none-frame {
@@ -208,6 +200,7 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .footer i {
@@ -216,8 +209,8 @@ h1 {
   cursor: pointer;
 }
 
-.footer i:hover {
-  opacity: 0.75;
+.footer i:active{
+  opacity: 0.75 !important;
 }
 
 .footer-text-top {
@@ -247,6 +240,24 @@ h1 {
 }
 
 /* ----- MEDIA QUERIES BEGIN BELOW ----- */
+
+@media screen and (min-width: 400px) {
+  #wiki-search-button:hover {
+    box-shadow: 0px 0px 5px #72777d;
+  }
+
+  #wiki-random-button:hover {
+    box-shadow: 0px 0px 5px #72777d;
+  }
+
+  .result-frame:hover {
+    border-left: 8px solid #1746b1;
+  }
+
+  .footer i:hover {
+    opacity: 0.75;
+  }
+}
 
 @media screen and (max-width: 650px) {
   #search-bar-container{

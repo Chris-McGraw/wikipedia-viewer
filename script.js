@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $("body *").on("touchstart", function (){});
+
 /* ---------- Variable Declarations ---------- */
 
   searchTerm = "";
