@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   $("body *").on("touchstart", function (){
+    $("#wiki-search-button").removeClass("button-hovered");
     $(".result-frame").removeClass("result-frame-hovered");
   });
 
@@ -61,6 +62,16 @@ $(document).ready(function(){
       getResults();
     }
   });
+
+
+  $("#wiki-search-button").on("mouseenter", function(){
+    $(this).addClass("button-hovered");
+  });
+
+  $("#wiki-search-button").on("mouseleave", function(){
+    $(this).removeClass("button-hovered");
+  });
+
 
   $("#wiki-search-button").on("click", function(){
     searchTerm = document.getElementById("search-bar").value;
