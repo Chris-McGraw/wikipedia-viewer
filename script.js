@@ -20,6 +20,14 @@ $(document).ready(function(){
             $("#results-container").append("<a class='result-frame-link' target='_blank' href=" + "https://en.wikipedia.org/?curid=" + json.query.pages[i].pageid + ">" + "<div class='result-frame'>" + "<div class='result-title'>" + json.query.pages[i].title + "</div>" + "<div class='result-desc'>" + json.query.pages[i].extract + "</div>" + "</div>" + "</a>");
           }
 
+          $(".result-frame").on("mouseenter", function(){
+            $(this).addClass("hovered");
+          });
+
+          $(".result-frame").on("mouseleave", function(){
+            $(this).removeClass("hovered");
+          });
+
           /* json.query.pages.forEach(function(element){
             console.log(element.title);
             console.log(element.pageid);
@@ -41,6 +49,12 @@ $(document).ready(function(){
       }
     }
   }
+
+  /* function mouseHover(){
+    $(".result-frame").on("mouseenter", function(){
+      $(this).addClass("hovered");
+    });
+  } */
 
 /* ---------- Event Handlers ---------- */
 
