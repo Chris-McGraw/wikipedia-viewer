@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-  $("body *").on("touchstart", function (){
+ /* $("body *").on("touchstart", function (){
     $("#wiki-search-button").removeClass("button-hovered");
     $(".result-frame").removeClass("result-frame-hovered");
-  });
+  }); */
 
 /* ---------- Variable Declarations ---------- */
 
@@ -82,4 +82,12 @@ $(document).ready(function(){
   $("#search-icon").on("click", function(){
     $("#results-container").slideToggle(750);
   });
+
+
+  $("body *").on("touchstart", function (){
+    $("#wiki-search-button").removeClass("button-hovered");
+    $(".result-frame").removeClass("result-frame-hovered");
+  });
+
+  
 });
