@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $("body *").on("touchstart", function (){
-    $(".result-frame").removeClass("hovered");
+    $(".result-frame").removeClass("result-frame-hovered");
   });
 
 /* ---------- Variable Declarations ---------- */
