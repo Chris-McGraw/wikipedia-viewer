@@ -87,7 +87,7 @@ h1 {
 }
 
 #wiki-search-button:active {
-  box-shadow: inset 0px 0px 5px #a3a9b2 !important;
+  box-shadow: inset 0px 0px 5px #a3a9b2;
 }
 
 #wiki-random-button {
