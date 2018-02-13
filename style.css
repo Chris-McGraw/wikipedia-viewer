@@ -18,14 +18,6 @@ body {
   background-attachment: fixed;
 }
 
-.hovered {
-  border-left: 8px solid #1746b1 !important;
-}
-
-.not-hovered {
-  border-left: 1px solid black !important;
-}
-
 #search-container {
   height: 350px;
   margin-top: 1px;
@@ -143,6 +135,10 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.hovered {
+  border-left: 8px solid #1746b1;
 }
 
 .result-frame:active {
