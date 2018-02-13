@@ -23,11 +23,11 @@ $(document).ready(function(){
           }
 
           $(".result-frame").on("mouseenter", function(){
-            $(this).addClass("hovered");
+            $(this).addClass("result-frame-hovered");
           });
 
           $(".result-frame").on("mouseleave", function(){
-            $(this).removeClass("hovered");
+            $(this).removeClass("result-frame-hovered");
           });
 
           /* json.query.pages.forEach(function(element){
@@ -51,12 +51,6 @@ $(document).ready(function(){
       }
     }
   }
-
-  /* function mouseHover(){
-    $(".result-frame").on("mouseenter", function(){
-      $(this).addClass("hovered");
-    });
-  } */
 
 /* ---------- Event Handlers ---------- */
 

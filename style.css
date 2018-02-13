@@ -137,7 +137,7 @@ h1 {
   cursor: pointer;
 }
 
-.hovered {
+.result-frame-hovered {
   border-left: 8px solid #1746b1;
 }
 
