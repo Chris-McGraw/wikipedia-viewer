@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
  $("body *").on("touchstart", function (){
-    $("#wiki-search-button").removeClass("button-hovered");
     $(".result-frame").removeClass("result-frame-hovered");
     $(".footer-icon").removeClass("footer-icon-hovered");
   });
@@ -32,7 +31,7 @@ $(document).ready(function(){
             $(this).removeClass("result-frame-hovered");
           });
 
-          /* json.query.pages.forEach(function(element){
+         /* json.query.pages.forEach(function(element){
             console.log(element.title);
             console.log(element.pageid);
             console.log(element.extract);
@@ -59,33 +58,18 @@ $(document).ready(function(){
   $(document).keypress(function(key) {
     if(key.which == 13) {
       searchTerm = document.getElementById("search-bar").value;
-
       getResults();
     }
   });
 
-
-  $("#wiki-search-button").on("mouseenter", function(){
-    $(this).addClass("button-hovered");
-  });
-
-  $("#wiki-search-button").on("mouseleave", function(){
-    $(this).removeClass("button-hovered");
-  });
-
-
   $("#wiki-search-button").on("click", function(){
-    $(this).removeClass("button-hovered");
-
     searchTerm = document.getElementById("search-bar").value;
-
     getResults();
   });
 
   $("#search-icon").on("click", function(){
     $("#results-container").slideToggle(750);
   });
-
 
   $(".footer-icon").on("mouseenter", function(){
     $(this).addClass("footer-icon-hovered");
@@ -94,6 +78,4 @@ $(document).ready(function(){
   $(".footer-icon").on("mouseleave", function(){
     $(this).removeClass("footer-icon-hovered");
   });
-
-
 });
