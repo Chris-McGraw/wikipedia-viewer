@@ -211,14 +211,18 @@ h1 {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.footer i {
+.footer-icon {
   color: #1746b1;
   link-style: none;
   cursor: pointer;
 }
 
-.footer i:active{
-  opacity: 0.75 !important;
+.footer-icon-hovered {
+  opacity: 0.75;
+}
+
+.footer-icon:active{
+  opacity: 0.75;
 }
 
 .footer-text-top {
