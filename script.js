@@ -74,8 +74,8 @@ $(document).ready(function(){
 
 
   $("#wiki-search-button").on("click", function(){
-    $(".result-frame").removeClass("result-frame-hovered");
-    
+    $(this).removeClass("button-hovered");
+
     searchTerm = document.getElementById("search-bar").value;
 
     getResults();
