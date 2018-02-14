@@ -3,6 +3,7 @@ $(document).ready(function(){
  $("body *").on("touchstart", function (){
     $("#wiki-search-button").removeClass("button-hovered");
     $(".result-frame").removeClass("result-frame-hovered");
+    $(".footer-icon").removeClass("footer-icon-hovered");
   });
 
 /* ---------- Variable Declarations ---------- */
@@ -84,4 +85,15 @@ $(document).ready(function(){
   $("#search-icon").on("click", function(){
     $("#results-container").slideToggle(750);
   });
+
+
+  $(".footer-icon").on("mouseenter", function(){
+    $(this).addClass("footer-icon-hovered");
+  });
+
+  $(".footer-icon").on("mouseleave", function(){
+    $(this).removeClass("footer-icon-hovered");
+  });
+
+
 });
