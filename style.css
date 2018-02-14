@@ -26,10 +26,7 @@ body {
 }
 
 h1 {
-
-  width: 375px;
   width: 395px;
-
   margin: auto;
   margin-top: 77px;
   text-align: center;
@@ -253,24 +250,6 @@ h1 {
 
 /* ----- MEDIA QUERIES BEGIN BELOW ----- */
 
-/* @media screen and (min-width: 400px) {
-  #wiki-search-button:hover {
-    box-shadow: 0px 0px 5px #72777d;
-  }
-
-  #wiki-random-button:hover {
-    box-shadow: 0px 0px 5px #72777d;
-  }
-
-  .result-frame:hover {
-    border-left: 8px solid #1746b1;
-  }
-
-  .footer i:hover {
-    opacity: 0.75;
-  }
-} */
-
 @media screen and (max-width: 650px) {
   #search-bar-container{
     width: 450px;
@@ -296,6 +275,10 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
+  h1 {
+    width: 370px;
+    font-size: 36px;
+  }
   #search-bar-container{
     width: 370px;
   }
@@ -304,5 +287,21 @@ h1 {
   }
   #search-icon{
     left: 343px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    width: 350px;
+    font-size: 34px;
+  }
+  #search-bar-container{
+    width: 350px;
+  }
+  #search-bar{
+    width: 90%;
+  }
+  #search-icon{
+    left: 325px;
   }
 }
