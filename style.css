@@ -296,6 +296,10 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
+  h1 {
+    width: 370px;
+    font-size: 36px;
+  }
   #search-bar-container{
     width: 370px;
   }
@@ -304,5 +308,21 @@ h1 {
   }
   #search-icon{
     left: 343px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    width: 350px;
+    font-size: 34px;
+  }
+  #search-bar-container{
+    width: 350px;
+  }
+  #search-bar{
+    width: 90%;
+  }
+  #search-icon{
+    left: 325px;
   }
 }
