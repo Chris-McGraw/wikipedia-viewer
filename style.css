@@ -43,6 +43,8 @@ h1 {
 }
 
 #search-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   display: block;
   width: 496px;
   height: 37px;
@@ -250,7 +252,7 @@ h1 {
 
 /* ----- MEDIA QUERIES BEGIN BELOW ----- */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   #search-bar-container{
     width: 450px;
   }
@@ -263,6 +265,10 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+  h1{
+    width: 350px;
+    font-size: 36px;
+  }
   #search-bar-container{
     width: 420px;
   }
@@ -276,8 +282,7 @@ h1 {
 
 @media screen and (max-width: 450px) {
   h1 {
-    width: 370px;
-    font-size: 36px;
+    font-size: 34px;
   }
   #search-bar-container{
     width: 370px;
@@ -292,8 +297,7 @@ h1 {
 
 @media screen and (max-width: 400px) {
   h1 {
-    width: 350px;
-    font-size: 34px;
+    font-size: 32px;
   }
   #search-bar-container{
     width: 350px;
@@ -303,5 +307,21 @@ h1 {
   }
   #search-icon{
     left: 325px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    width: 330px;
+    font-size: 30px;
+  }
+  #search-bar-container{
+    width: 330px;
+  }
+  #search-bar{
+    width: 90%;
+  }
+  #search-icon{
+    left: 308px;
   }
 }
