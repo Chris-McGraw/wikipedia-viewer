@@ -68,7 +68,8 @@ $(document).ready(function(){
   });
 
   $("#search-icon").on("click", function(){
-    $("#results-container").slideToggle(750);
+    searchTerm = document.getElementById("search-bar").value;
+    getResults();
   });
 
   $(".footer-icon").on("mouseenter", function(){
