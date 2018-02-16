@@ -43,6 +43,8 @@ h1 {
 }
 
 #search-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   display: block;
   width: 496px;
   height: 37px;
@@ -320,6 +322,6 @@ h1 {
     width: 90%;
   }
   #search-icon{
-    left: 307px;
+    left: 308px;
   }
 }
